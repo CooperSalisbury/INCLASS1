@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Courier New", Courier, monospace;
+  --bg-primary: black;
+  --bg-secondary: red;
+  --font-color-primary: black;
+  --font-color-secondary: grey;
+  --backup-color: beige;
+}
+body {
+  background: var(--bg-primary);
+}
+
+.product-card {
+  margin: 120px auto;
+  width: 800px;
+  height: 500px;
+  display: flex;
+  background: white;
+}
+
+.product-card .left-img-col img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.product-card .right-info-col {
+  padding: 20px;
+  width: 60%;
+}
+.product-card .right-info-col h3 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.product-card .right-info-col h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--font-color-secondary);
+}
+p {
+  font-size: 14px;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+.available-colors {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.available-colors span {
+  font-size: 14px;
+}
+.black-color-container {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-flex;
+  margin-left: 40px;
+  cursor: pointer;
+  transition: background 0.3 ease;
+}
+.red-color-container {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-flex;
+  margin-left: 40px;
+  cursor: pointer;
+  transition: background 0.3 ease;
+}
+.white-color-container {
+  height: 20px;
+  width: 20px;
+  background-color: beige;
+  border-radius: 50%;
+  display: inline-flex;
+  margin-left: 40px;
+  cursor: pointer;
+  transition: background 0.3 ease;
+}
+
+.price h4 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.price .buy-btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 15px;
+  color: white;
+  background: var(--bg-primary);
+  border: none;
+  cursor: pointer;
+  transition: background 0.3 ease;
+  margin-bottom: 20px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
